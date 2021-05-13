@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-12 m-auto">
+            <%- include ./partials/message%>
+            <h3><b>Add Invoice from here </b></h3>
+            <hr>
+            <h4>Name : <%=customer.name%> </h4>
+            <form action="/app/create/<%=customer._id%>" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="">Date : </label>
+                    <input type="date" name="invoiceDate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Particulars : </label>
+                    <input type="text" name="products" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Quantity : </label>
+                    <input type="number" name="quantity" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Rate : </label>
+                    <input type="number" name="rate" step="0.01" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Upload Challan</label>
+                    <input type="file" name="challan" id="challan" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

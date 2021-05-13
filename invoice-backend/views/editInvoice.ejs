@@ -1,0 +1,29 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-12 m-auto">
+            <h3>Edit Invoice</h3>
+            <hr>
+            <form action="/app/details/<%=customerId%>/<%=invoice._id%>/edit" method="post">
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input type="date" name="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Rate</label>
+                    <input type="number" class="form-control" step="0.01" name="rate" value="<%=invoice.rate%>" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Quantity</label>
+                    <input type="number" class="form-control" name="quantity" value="<%=invoice.quantity%>" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Particulars</label>
+                    <input type="text" class="form-control" name="products" value="<%=invoice.products%>" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

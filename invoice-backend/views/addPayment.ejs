@@ -1,0 +1,52 @@
+<div class="container mt-3">
+    <div class="col-md-8 col-sm-6 col-lg-12">
+        <%if(customer.invoice.length == 0){%>
+            <h3>No Invoices to add payments First create invoice</h3>
+            <%}else{%>
+                <%- include ./partials/message%>
+                    <h3>Add Received Payment </h3>
+                    <hr>
+                    <form action="/app/addPayment/<%=customer._id%>" method="POST">
+                        <div class="form-group">
+                            <label for="">Amount</label>
+                            <input type="number" class="form-control" required name="amount">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Date</label>
+                            <input type="date" class="form-control" required name="date">
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" name="send" class="custom-control-input" id="defaultUnchecked">
+                                <label class="custom-control-label" for="defaultUnchecked">Send SMS</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Payment Mode</label>
+                            <select name="mode" onchange="run()" id="mode" class="form-control">
+                    <option value="Cash">Cash</option>
+                    <option value="Cheque">Cheque</option>
+                    <option value="Card">Card</option>
+                </select>
+                        </div>
+                        <div class="form-group" style="display:none" id="chequeNo">
+                            <label for="">Cheque Number & Name</label>
+                            <input type="text" class="form-control" name="chequenumber">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                    <%}%>
+    </div>
+</div>
+<script>
+    function run() {
+        var mode = document.getElementById('mode').value;
+        if (mode == 'Cheque') {
+            document.getElementById('chequeNo').style.display = 'block';
+        } else {
+            document.getElementById('chequeNo').style.display = 'none';
+        }
+    }
+</script>

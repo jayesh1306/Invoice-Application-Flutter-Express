@@ -1,0 +1,58 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-8 m-auto">
+            <%if(payment.length==0){%>
+                <h3>No Payments found for
+                    <%=customer.name%>
+                </h3>
+                <%}else{%>
+                    <h3>Received Payments</h3>
+                    <hr>
+                    <table class="table" style="display: block;overflow-x: auto;">
+                        <%- include partials/message%>
+                            <thead>
+                                <tr class="text-center">
+                                    <th>#</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Mode</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%for(var i=0;i< payment.length;i++){%>
+                                    <tr class="text-center">
+                                        <td>
+                                            <%=i+1%>
+                                        </td>
+                                        <td>
+                                            <%=payment[i].amount%>
+                                        </td>
+                                        <td>
+                                            <%=payment[i].date.toDateString()%>
+                                        </td>
+                                        <td>
+                                            <%=payment[i].mode%>
+                                        </td>
+                                        <td><a href="/app/details/<%=customer._id%>/payments/delete/<%=payment[i]._id%>"><i
+                                                    class=" fas fa-trash fa-1x" style="color: red;"></i></a>
+                                        </td>
+                                    </tr>
+                                    <%}%>
+                                        <tr>
+                                            <td style="color: green;font-weight: bolder;font-size: 17px;"><b>Total :
+                                                </b></td>
+                                            <td class="text-center" style="color: green;font-weight: bolder;font-size: 17px;">
+                                                <b>
+                                                    <% var sum=0; for(var i=0;i< payment.length ; i++){ sum
+                                                        +=payment[i].amount; } %>
+                                                        <%=sum %>
+                                                </b>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                    </table>
+                    <%}%>
+        </div>
+    </div>
+</div>

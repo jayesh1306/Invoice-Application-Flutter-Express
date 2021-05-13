@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-12 m-auto">
+            <%- include ./partials/message%>
+            <h3><b>Create Invoice</b></h3>
+            <hr>
+            <%if(customer.length == 0){%>
+            No any customer Please add <a href="/app/addCustomer">here</a>
+            <%}else{%>
+            <ul class="list-group">
+                <%for(var i=0;i< customer.length;i++){%>
+                <li class="list-group-item"><a href="/app/create/<%=customer[i]._id%>"><%=customer[i].name%></a></li>
+                <%}%> 
+            </ul>
+                </div>
+            <%}%>
+        </div>
+    </div>
+</div>
+</div>

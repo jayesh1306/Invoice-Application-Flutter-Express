@@ -1,0 +1,27 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-12">
+            <%if(customer.invoice.length == 0){%>
+            <h3>There is no invoice to add advance payment</h3>
+            <%}else if(customer.advance.amount !== 0  ){%>
+            <h3>Advance Already added </h3>
+            <%}else{%>
+            <form action="" method="POST">
+                <h3>Advance </h3>
+                <hr>
+                <div class="form-group">
+                    <label for="">Advance</label>
+                    <input type="number" name="amount" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input type="date" name="advanceDate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </form>
+            <%}%>
+        </div>
+    </div>
+</div>

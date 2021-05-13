@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-lg-12 m-auto">
+            <form action="/app/details/<%=customerId%>/getPDF" method="post">
+                <div class="form-group">
+                    <label for="">From Date</label>
+                    <input type="date" name="fromDate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">To Date</label>
+                    <input type="date" name="toDate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Logo</label>
+                    <select name="logo" id="" class="form-control">
+                        <option value="/images/logo.png">Rameshwar Enterprise</option>
+                        <option value="/images/name (1).png">Bhupat P Prajapati</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Get Pdf" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

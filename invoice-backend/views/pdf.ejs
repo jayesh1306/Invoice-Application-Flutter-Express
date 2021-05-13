@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>A simple, clean, and responsive HTML invoice template</title>
+
+    <style>
+        html {
+            margin: 2%;
+        }
+        
+        .invoice-box {
+            margin: auto;
+            padding: 3%;
+            /* font-size: 25px !important; */
+            /* line-height: 24px; */
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+        }
+        
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
+        
+        .invoice-box table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        
+        .invoice-box table tr td:nth-child(2) {
+            text-align: right;
+        }
+        
+        .invoice-box table tr.top table td {
+            padding-bottom: 20px;
+        }
+        
+        .invoice-box table tr.top table td.title {
+            /* font-size: 45px; */
+            /* line-height: 45px; */
+            color: #333;
+        }
+        
+        .invoice-box table tr.information table td {
+            padding-bottom: 40px;
+        }
+        
+        .invoice-box table tr.heading td {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        
+        .invoice-box table tr.details td {
+            padding-bottom: 20px;
+        }
+        
+        .invoice-box table tr.item td {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .invoice-box table tr.item.last td {
+            border-bottom: none;
+        }
+        
+        .invoice-box table tr.total td:nth-child(2) {
+            border-top: 2px solid #eee;
+            font-weight: bold;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .invoice-box table tr.top table td {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+            .invoice-box table tr.information table td {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+        /** RTL **/
+        
+        .rtl {
+            direction: rtl;
+            font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        }
+        
+        .rtl table {
+            text-align: right;
+        }
+        
+        .rtl table tr td:nth-child(2) {
+            text-align: left;
+        }
+        
+        td {
+            font-size: 15px !important;
+        }
+    </style>
+</head>
+<%if(invoice.length==0){%>
+    <h3>No Invoice found. Please create and the Generate Pdf</h3>
+    <%}else{%>
+
+        <body onload="getDateOfCreation()">
+            <div class="invoice-box">
+                <table cellpadding="0" cellspacing="0">
+                    <tr class="top">
+                        <td colspan="6">
+                            <table>
+                                <tr>
+                                    <td class="title p-5">
+                                        <% if( creator=='Bhupat Prajapati' ){ %>
+                                            <img src="https://res.cloudinary.com/diksrk8se/image/upload/v1619688772/name_1.png" style="width:100%; max-width:230px;">
+                                            <%}else{%>
+                                                <img src="https://res.cloudinary.com/diksrk8se/image/upload/v1619602352/logo.png" style="width:100%; max-width:230px;">
+                                                <%}%>
+                                                    <br>
+                                    </td>
+
+                                    <td>
+                                        <!-- <span style="font-weight: 900;">Invoice #:</span> <span id="invoiceNo"></span><br> -->
+                                        <span style="font-weight: 900;font-size: 12px;">Created:</span> <span id="createdOn" style="font-size: 12px;"></span><br>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                            <td>
+                                <p style="font-size: 14px;margin-top: -15%;margin-left: 32% !important;">At Po Pandor,
+                                    Vapi - 396195
+                                </p>
+                            </td>
+                        </tr> -->
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="information">
+                        <td colspan="6">
+                            <table>
+                                <tr>
+                                    <td style="width: 30% !important;">
+                                        <span style="font-weight: 900;font-size: 12px;">
+                                            <%=customer.name%>
+                                        </span><br>
+                                        <span style="font-weight: 900;font-size: 12px;">
+                                            <%=customer.contact%>
+                                        </span><br>
+                                        <span style="font-weight: 900;max-width: 100px;font-size: 12px;">
+                                            <%=customer.address%>
+                                        </span><br>
+                                    </td>
+                                    <td>
+                                        <span style="font-weight: 900;font-size: 12px;">Bhupat P Prajapati</span><br>
+                                        <span style="font-weight: 900;font-size: 12px;">+91 9898631960</span><br>
+                                        <span style="font-weight: 900;font-size: 12px;">bhupat203@gmail.com</span><br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr class="heading">
+                        <td>
+                            #
+                        </td>
+                        <td class="text-left" style="font-size: 12px !important;text-align: center !important;">Date
+                        </td>
+
+                        <td class="text-left" style="font-size: 12px !important;">
+                            Item
+                        </td>
+                        <td class="text-left" style="font-size: 12px !important;">Quantity</td>
+                        <td class="text-left" style="font-size: 12px !important;">Rate</td>
+                        <td class="text-center" style="font-size: 12px !important;">
+                            Total
+                        </td>
+                    </tr>
+
+                    <%for(var i=0;i < invoice.length;i++){%>
+                        <tr class="item" style="font-size: 12px !important;">
+                            <td style="font-size: 12px !important">
+                                <%=i+1%>
+                            </td>
+                            <td style="font-size: 12px !important;text-align: center !important;">
+                                <%=invoice[i].date.getDate()+ '/' + parseInt(invoice[i].date.getMonth() + 1)
+                                    +'/'+invoice[i].date.getFullYear()%>
+                            </td>
+                            <td class="text-left" style="font-size: 12px !important">
+                                <%=invoice[i].products%>
+                            </td>
+
+                            <td class="text-left" style="font-size: 12px !important">
+                                <%=invoice[i].quantity%>
+                            </td>
+                            <td class="text-left" style="font-size: 12px !important">
+                                <%=invoice[i].rate%> ₹
+                            </td>
+                            <td class="text-center" style="font-size: 12px !important">
+                                <%=(invoice[i].quantity * (invoice[i].rate *10))/10%> ₹
+                            </td>
+                        </tr>
+                        <%}%>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-right"> Total :</td>
+                                <td class="text-center" style="font-size: 12px !important">
+                                    <%=totalPrice%>
+                                </td>
+
+                            </tr>
+                </table><br><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <td>
+                            <b style="font-weight: bold;font-size: 12px !important;">Total in Words :</b>
+                            <span style="font-size: 12px !important">
+                                <%=totalWords.toUpperCase()%> ONLY
+                            </span>
+
+                        </td>
+                    </div>
+                    <div class="col-md-6 m-auto text-right">
+                        <p style="margin-right:17%;font-size: 14px !important;">Proprietor,</p>
+                        <p style="margin-right:10%;margin-top: -3%;font-size: 14px !important;">Bhupat Prajapati</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <%}%>
+            <script>
+                function getDateOfCreation() {
+                    var date = new Date();
+                    document.getElementById('createdOn').innerHTML = date.getDate() + '/' + parseInt(1 + date.getMonth()) + '/' + date.getFullYear();
+                }
+
+                function getWords(num) {
+                    var a = ['', 'one ', 'two ', 'three ', 'four ', 'five ', 'six ', 'seven ', 'eight ', 'nine ', 'ten ', 'eleven ', 'twelve', 'thirteen ', 'fourteen ', 'fifteen ', 'sixteen ', 'seventeen ', 'eighteen ', 'nineteen '];
+                    var b = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+                    if ((num = num.toString()).length > 9) return 'overflow';
+                    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+                    if (!n) return;
+                    var str = '';
+                    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'Crore ' : '';
+                    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'Lakh ' : '';
+                    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'Thousand ' : '';
+                    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'Hundred ' : '';
+                    str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+                    document.getElementById('total').innerHTML = str
+                }
+            </script>
+
+
+</html>

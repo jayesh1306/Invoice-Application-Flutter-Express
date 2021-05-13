@@ -1,0 +1,52 @@
+<div class="container mt-3">
+    <div class="col-md-12 col-sm-12 col-lg-12 ">
+        <%- include ./partials/message%>
+            <h3><b>Customer Details</b></h3>
+            <hr>
+            <table style="overflow-x: auto;display: block;" class="table">
+                <thead>
+                    <tr class="text-center">
+                        <th>Name</th>
+                        <th>Payments</th>
+                        <th>Advance</th>
+                        <th>Send SMS</th>
+                        <th>Delete</th>
+                        <th>View</th>
+                        <th>PDF</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%if(customer.length == 0){%>
+                        <h3>No Customer Found <a href="/app/addCustomer">Click here to Add</a></h3>
+                        <%}else{%>
+                            <%for(var i=0;i< customer.length;i++){%>
+                                <tr class="text-center">
+                                    <td>
+                                        <%=customer[i].name%>
+                                    </td>
+                                    <td class="text-center"><a href="/app/details/<%=customer[i]._id%>/payments"><i
+                                class="fa fa-credit-card"></i></a>
+                                    </td>
+                                    <td class="text-center"><a href="/app/details/advance/<%=customer[i]._id%>"><i
+                                class="fa fa-money"></i></a>
+                                    </td>
+                                    <td class="text-center"><a href="/app/sendSms/<%=customer[i]._id%>"><i
+                                class="fa fa-commenting-o"></i></a>
+                                    </td>
+                                    <td class="text-center"><a href="/app/details/delete/customer/<%=customer[i]._id%>"><i
+                                class="fa fa-ban"></i></a>
+                                    </td>
+                                    <td class="text-center"><a href="/app/details/<%=customer[i]._id%>"><i class="fa fa-eye "></i></a>
+                                    </td>
+
+                                    <td><a href="/app/details/<%=customer[i]._id%>/getPDF"><i class="fa fa-file-pdf-o"></i></a></td>
+                                    <td class="text-center"><a href="/app/details/edit/customer/<%=customer[i]._id%>"><i
+                                        class="fa fa-edit"></i></a></td>
+                                </tr>
+                                <%}%>
+                                    <%}%>
+                </tbody>
+            </table>
+    </div>
+</div>
