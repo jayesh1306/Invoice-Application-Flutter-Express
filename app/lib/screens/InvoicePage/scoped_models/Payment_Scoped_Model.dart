@@ -46,6 +46,7 @@ class PaymentModel extends Model {
 
   void addPayment(
       int amount, String date, String mode, String userId, bool send) async {
+    print(date);
     Response response = await dio.post('$baseUrl/addPayment/$userId',
         data: {"amount": amount, "mode": mode, "date": date, "send": send});
     print(response.data);

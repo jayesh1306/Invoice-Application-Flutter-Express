@@ -23,9 +23,12 @@ class _AddPaymentState extends State<AddPayment> {
 
   TextEditingController modeController = TextEditingController();
 
-  TextEditingController chequeController = TextEditingController();
+  // TextEditingController chequeController = TextEditingController();
+  TextEditingController chequeBankController = TextEditingController();
+  TextEditingController chequeNumberController = TextEditingController();
 
   String dropdownValue = 'Cash';
+  String invoiceDate;
 
   @override
   Widget build(BuildContext context) {
@@ -76,23 +79,114 @@ class _AddPaymentState extends State<AddPayment> {
                         contentPadding: EdgeInsets.only(left: 15, right: 15),
                         hintText: "Amount"),
                   ),
-                  TextFormField(
-                    cursorColor: Colors.black,
-                    controller: dateController,
-                    keyboardType: TextInputType.datetime,
-                    textInputAction: TextInputAction.done,
-                    textCapitalization: TextCapitalization.words,
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                    decoration: new InputDecoration(
-                        border: InputBorder.none,
-                        focusedBorder: InputBorder.none,
-                        enabledBorder: InputBorder.none,
-                        errorBorder: InputBorder.none,
-                        disabledBorder: InputBorder.none,
-                        contentPadding: EdgeInsets.only(left: 15, right: 15),
-                        hintText: "Date (format : yyyy-mm-dd)"),
+                  ListTile(
+                    trailing: invoiceDate != null
+                        ? IconButton(
+                            icon: Icon(Icons.close),
+                            onPressed: () {
+                              showDialog(
+                                builder: (BuildContext context) {
+                                  return Center(
+                                    child: Card(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(60.0),
+                                      ),
+                                      elevation: 6,
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Container(
+                                            // height: MediaQuery.of(context)
+                                            //         .size
+                                            //         .height *
+                                            //     0.15,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                0.7,
+                                            color: Colors.white,
+                                            child: Column(
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsets.all(20),
+                                                  child: Text(
+                                                    'Are you sure want to delete the image ?',
+                                                    style: TextStyle(
+                                                        fontSize: 23,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.end,
+                                                  children: [
+                                                    TextButton(
+                                                      onPressed: () {
+                                                        setState(() {
+                                                          invoiceDate = null;
+                                                        });
+                                                        Navigator.pop(context);
+                                                      },
+                                                      child: Text(
+                                                        'Yes',
+                                                        style: TextStyle(
+                                                            color:
+                                                                Colors.green),
+                                                      ),
+                                                    ),
+                                                    TextButton(
+                                                        onPressed: () {
+                                                          Navigator.pop(
+                                                              context);
+                                                        },
+                                                        child: Text(
+                                                          'No',
+                                                          style: TextStyle(
+                                                              color:
+                                                                  Colors.red),
+                                                        ))
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                },
+                                context: context,
+                              );
+                            },
+                          )
+                        : Text(''),
+                    onTap: () {
+                      showDatePicker(
+                              context: context,
+                              initialDate: DateTime.now(),
+                              firstDate: DateTime(2018),
+                              lastDate: DateTime.now())
+                          .then((value) {
+                        if (value != null) {
+                          String date = value.toString().split(' ')[0];
+                          setState(() {
+                            invoiceDate = date;
+                          });
+                          print(invoiceDate);
+                        }
+                      }).catchError((onError) => {});
+                    },
+                    title: invoiceDate == null
+                        ? Text(
+                            'Select from Date',
+                            style: TextStyle(fontSize: 20),
+                          )
+                        : Text(
+                            '$invoiceDate',
+                            style: TextStyle(fontSize: 20),
+                          ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 18.0),
@@ -124,25 +218,48 @@ class _AddPaymentState extends State<AddPayment> {
                     ),
                   ),
                   dropdownValue == 'Cheque'
-                      ? TextFormField(
-                          cursorColor: Colors.black,
-                          controller: chequeController,
-                          keyboardType:
-                              TextInputType.numberWithOptions(decimal: false),
-                          textInputAction: TextInputAction.next,
-                          textCapitalization: TextCapitalization.words,
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                          decoration: new InputDecoration(
-                              border: InputBorder.none,
-                              focusedBorder: InputBorder.none,
-                              enabledBorder: InputBorder.none,
-                              errorBorder: InputBorder.none,
-                              disabledBorder: InputBorder.none,
-                              contentPadding:
-                                  EdgeInsets.only(left: 15, right: 15),
-                              hintText: "Cheque Number (Optional)"),
+                      ? Column(
+                          children: [
+                            TextFormField(
+                              cursorColor: Colors.black,
+                              controller: chequeBankController,
+                              keyboardType: TextInputType.name,
+                              textInputAction: TextInputAction.next,
+                              textCapitalization: TextCapitalization.words,
+                              style: TextStyle(
+                                fontSize: 20,
+                              ),
+                              decoration: new InputDecoration(
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
+                                  contentPadding:
+                                      EdgeInsets.only(left: 15, right: 15),
+                                  hintText: "Bank Name"),
+                            ),
+                            TextFormField(
+                              cursorColor: Colors.black,
+                              controller: chequeNumberController,
+                              keyboardType: TextInputType.numberWithOptions(
+                                  decimal: false),
+                              textInputAction: TextInputAction.next,
+                              textCapitalization: TextCapitalization.words,
+                              style: TextStyle(
+                                fontSize: 20,
+                              ),
+                              decoration: new InputDecoration(
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
+                                  contentPadding:
+                                      EdgeInsets.only(left: 15, right: 15),
+                                  hintText: "Cheque Number"),
+                            ),
+                          ],
                         )
                       : Container(),
                   CheckboxListTile(
@@ -163,7 +280,7 @@ class _AddPaymentState extends State<AddPayment> {
                     margin: EdgeInsets.only(left: 15),
                     child: ElevatedButton(
                       onPressed: amountController.text == '' &&
-                              dateController.text == '' &&
+                              invoiceDate == '' &&
                               dropdownValue == ''
                           ? () {
                               ScaffoldMessenger.of(context).showSnackBar(
@@ -175,20 +292,22 @@ class _AddPaymentState extends State<AddPayment> {
                               );
                             }
                           : () {
-                              if (chequeController.text == '') {
+                              if (chequeBankController.text == '') {
                                 model.addPayment(
                                     int.parse(amountController.text),
-                                    dateController.text,
+                                    invoiceDate,
                                     dropdownValue,
                                     widget.user.id,
                                     send);
                               } else {
                                 model.addPayment(
                                     int.parse(amountController.text),
-                                    dateController.text,
+                                    invoiceDate,
                                     dropdownValue +
                                         ' - ' +
-                                        chequeController.text,
+                                        chequeNumberController.text +
+                                        ' - ' +
+                                        chequeBankController.text,
                                     widget.user.id,
                                     send);
                               }
