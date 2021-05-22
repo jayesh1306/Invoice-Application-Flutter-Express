@@ -53,7 +53,8 @@ app.use('/', authentication);
 
 //Database Connection
 mongoose.connect(
-    process.env.MONGODB_PRODUCTION, {
+    // process.env.MONGODB_PRODUCTION, 
+    'mongodb://localhost:27017/testing', {
         //  'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/ebill?retryWrites=true&w=majority', {
         // 'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/flutter-testing?retryWrites=true&w=majority', {
         useNewUrlParser: true,

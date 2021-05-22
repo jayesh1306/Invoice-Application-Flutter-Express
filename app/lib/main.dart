@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:testing/OptionMenu.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:testing/screens/InvoicePage/scoped_models/Invoice_Scoped_Model.dart';
+import 'package:testing/screens/InvoicePage/scoped_models/User_Scoped_Model.dart';
+import 'package:testing/screens/TransactionPage/scoped_model/Transaction_Scoped_Model.dart';
+
+TransactionModel transactionModel = new TransactionModel();
+UserModel userModel = new UserModel();
 
 main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +24,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    userModel.getAllUsers();
+    transactionModel.getAllTransactions();
   }
 
   @override

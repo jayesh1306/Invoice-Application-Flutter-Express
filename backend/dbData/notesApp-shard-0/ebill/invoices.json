@@ -1,0 +1,1054 @@
+[{
+        "_id": {
+            "$oid": "5e822fe16a6b4a00171b1e76"
+        },
+        "date": {
+            "$date": "2020-02-06T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1585590241/elxmn4094gi6twbhbs9h.jpg",
+        "rate": 3.8,
+        "quantity": 4000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5e8230246a6b4a00171b1e77"
+        },
+        "date": {
+            "$date": "2020-03-04T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1585590307/bcof3qjjzjjsfnoxdwwa.jpg",
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5ece134f1eb7ee0017e2fbc9"
+        },
+        "date": {
+            "$date": "2020-02-06T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1590563663/yptpijazlrgtpnhvzz0g.jpg",
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5ece14331eb7ee0017e2fbcb"
+        },
+        "date": {
+            "$date": "2020-03-04T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1590563890/kn0inbnchaiwqonm1edr.jpg",
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5ed0a46f77ae0f0017db7119"
+        },
+        "date": {
+            "$date": "2020-05-29T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1590731887/uvnmreolalhplgxgxmc0.jpg",
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc63f82bab4b00174744b4"
+        },
+        "date": {
+            "$date": "2019-11-22T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64112bab4b00174744b5"
+        },
+        "date": {
+            "$date": "2019-12-06T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64302bab4b00174744b6"
+        },
+        "date": {
+            "$date": "2019-12-08T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64712bab4b00174744b7"
+        },
+        "date": {
+            "$date": "2019-12-17T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc648a2bab4b00174744b8"
+        },
+        "date": {
+            "$date": "2019-12-23T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64a62bab4b00174744b9"
+        },
+        "date": {
+            "$date": "2019-12-28T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64c42bab4b00174744ba"
+        },
+        "date": {
+            "$date": "2020-01-13T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64db2bab4b00174744bb"
+        },
+        "date": {
+            "$date": "2020-01-13T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc64f42bab4b00174744bc"
+        },
+        "date": {
+            "$date": "2020-01-23T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc65102bab4b00174744bd"
+        },
+        "date": {
+            "$date": "2020-01-24T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc652a2bab4b00174744be"
+        },
+        "date": {
+            "$date": "2020-01-25T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc65412bab4b00174744bf"
+        },
+        "date": {
+            "$date": "2020-02-14T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5efe97d6e318bf00170fd721"
+        },
+        "date": {
+            "$date": "2019-05-26T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1593743317/ubyoefslqkxratnrelyo.jpg",
+        "rate": 3.8,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5eff29dfff73140017c677eb"
+        },
+        "date": {
+            "$date": "2020-07-03T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f12c7dbabd0e60017c53af8"
+        },
+        "date": {
+            "$date": "2020-07-17T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1595066331/fn9zvext0rztisxn4awo.jpg",
+        "rate": 4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f1ba2251a9e930017c82d27"
+        },
+        "date": {
+            "$date": "2020-07-24T00:00:00.000+0000"
+        },
+        "challan": "http://res.cloudinary.com/diksrk8se/image/upload/v1595646500/zclb5vjiexwpuhxdpvfl.jpg",
+        "rate": 4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f2c0b6e35c1f70017f2ae80"
+        },
+        "date": {
+            "$date": "2020-08-01T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f2c0bd835c1f70017f2ae81"
+        },
+        "date": {
+            "$date": "2020-08-02T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4,
+        "quantity": 6000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f43affa4d706900175e0769"
+        },
+        "date": {
+            "$date": "2020-08-24T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.5,
+        "quantity": 6000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f4bd663b7fc4700179a4e18"
+        },
+        "date": {
+            "$date": "2020-08-30T16:41:58.814+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f4bd675b7fc4700179a4e19"
+        },
+        "date": {
+            "$date": "2020-08-30T16:42:12.048+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f548e4445b82b0017605b91"
+        },
+        "date": {
+            "$date": "2020-09-05T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.6,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a67e4ca841c0017e41a11"
+        },
+        "date": {
+            "$date": "2020-08-31T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a67fbca841c0017e41a12"
+        },
+        "date": {
+            "$date": "2020-08-31T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a6812ca841c0017e41a13"
+        },
+        "date": {
+            "$date": "2020-09-01T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a682aca841c0017e41a14"
+        },
+        "date": {
+            "$date": "2020-09-02T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a683dca841c0017e41a15"
+        },
+        "date": {
+            "$date": "2020-09-02T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a684eca841c0017e41a16"
+        },
+        "date": {
+            "$date": "2020-09-03T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a685fca841c0017e41a17"
+        },
+        "date": {
+            "$date": "2020-09-03T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a6874ca841c0017e41a18"
+        },
+        "date": {
+            "$date": "2020-09-04T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.3,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a6887ca841c0017e41a19"
+        },
+        "date": {
+            "$date": "2020-09-04T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a689cca841c0017e41a1a"
+        },
+        "date": {
+            "$date": "2020-09-07T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a68b0ca841c0017e41a1b"
+        },
+        "date": {
+            "$date": "2020-09-08T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a68c5ca841c0017e41a1c"
+        },
+        "date": {
+            "$date": "2020-09-08T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a68ddca841c0017e41a1d"
+        },
+        "date": {
+            "$date": "2020-09-09T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a6915ca841c0017e41a1e"
+        },
+        "date": {
+            "$date": "2020-09-10T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f5a6925ca841c0017e41a1f"
+        },
+        "date": {
+            "$date": "2020-09-10T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695eb535462e00178f2d64"
+        },
+        "date": {
+            "$date": "2020-09-11T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695ec735462e00178f2d65"
+        },
+        "date": {
+            "$date": "2020-09-11T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695edb35462e00178f2d66"
+        },
+        "date": {
+            "$date": "2020-09-12T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695eef35462e00178f2d67"
+        },
+        "date": {
+            "$date": "2020-09-13T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695efe35462e00178f2d68"
+        },
+        "date": {
+            "$date": "2020-09-13T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f1135462e00178f2d69"
+        },
+        "date": {
+            "$date": "2020-09-14T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f2a35462e00178f2d6a"
+        },
+        "date": {
+            "$date": "2020-09-15T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f3935462e00178f2d6b"
+        },
+        "date": {
+            "$date": "2020-09-15T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f4935462e00178f2d6c"
+        },
+        "date": {
+            "$date": "2020-09-17T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f5e35462e00178f2d6d"
+        },
+        "date": {
+            "$date": "2020-09-18T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f7335462e00178f2d6e"
+        },
+        "date": {
+            "$date": "2020-09-19T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f8235462e00178f2d6f"
+        },
+        "date": {
+            "$date": "2020-09-19T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695f9135462e00178f2d70"
+        },
+        "date": {
+            "$date": "2020-09-20T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f695fa135462e00178f2d71"
+        },
+        "date": {
+            "$date": "2020-09-21T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f6d86c70102c40017987b28"
+        },
+        "date": {
+            "$date": "2020-09-22T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f6d86d90102c40017987b29"
+        },
+        "date": {
+            "$date": "2020-09-23T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.4,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f6d87000102c40017987b2a"
+        },
+        "date": {
+            "$date": "2020-09-25T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f75cb58f175dd0017e22769"
+        },
+        "date": {
+            "$date": "2020-09-25T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f75cc39f175dd0017e2276b"
+        },
+        "date": {
+            "$date": "2020-09-26T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f75cc4ff175dd0017e2276c"
+        },
+        "date": {
+            "$date": "2020-09-28T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f75cc5ff175dd0017e2276d"
+        },
+        "date": {
+            "$date": "2020-09-30T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5fbe663636874705e8c1faf3"
+        },
+        "date": {
+            "$date": "2020-11-25T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5fc0910e176a310017ea1f84"
+        },
+        "date": {
+            "$date": "2020-11-27T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5fc64314e181a1001739020b"
+        },
+        "date": {
+            "$date": "2020-11-29T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5fd9cc556948620017512cc6"
+        },
+        "date": {
+            "$date": "2020-12-15T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5fd9cc666948620017512cc7"
+        },
+        "date": {
+            "$date": "2020-12-16T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 5,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883ecc5659a70015192c7b"
+        },
+        "date": {
+            "$date": "2021-02-10T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.6,
+        "quantity": 5000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883ede5659a70015192c7c"
+        },
+        "date": {
+            "$date": "2021-03-20T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.7,
+        "quantity": 4000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883ef15659a70015192c7d"
+        },
+        "date": {
+            "$date": "2021-03-24T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.7,
+        "quantity": 4000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883efe5659a70015192c7e"
+        },
+        "date": {
+            "$date": "2021-04-20T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4.7,
+        "quantity": 4000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883fea5659a70015192c7f"
+        },
+        "date": {
+            "$date": "2020-07-28T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4,
+        "quantity": 6000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60883fff5659a70015192c80"
+        },
+        "date": {
+            "$date": "2020-08-19T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 4,
+        "quantity": 6000,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6089807cf6ba90001513d04f"
+        },
+        "date": {
+            "$date": "2021-03-08T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 1.4,
+        "quantity": 3000,
+        "products": "Block",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60898091f6ba90001513d050"
+        },
+        "date": {
+            "$date": "2021-03-14T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 1.4,
+        "quantity": 3000,
+        "products": "Block",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6089809ef6ba90001513d051"
+        },
+        "date": {
+            "$date": "2021-03-15T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 1.4,
+        "quantity": 3000,
+        "products": "Block",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "608980b4f6ba90001513d052"
+        },
+        "date": {
+            "$date": "2021-03-15T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 1.4,
+        "quantity": 3000,
+        "products": "Block",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "608980c1f6ba90001513d053"
+        },
+        "date": {
+            "$date": "2021-03-16T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 1.6,
+        "quantity": 3000,
+        "products": "Block",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60898147f6ba90001513d054"
+        },
+        "date": {
+            "$date": "2021-04-09T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 3.5,
+        "quantity": 500,
+        "products": "Bricks",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6089816af6ba90001513d055"
+        },
+        "date": {
+            "$date": "2021-04-06T00:00:00.000+0000"
+        },
+        "challan": null,
+        "rate": 600,
+        "quantity": 1,
+        "products": "Tractor 1Hr",
+        "__v": 0
+    }
+]

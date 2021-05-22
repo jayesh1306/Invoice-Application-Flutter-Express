@@ -1,0 +1,12 @@
+{
+    "_id": {
+        "$oid": "5ea6d850ef427d31d6d47d74"
+    },
+    "profile": "https://res.cloudinary.com/diksrk8se/image/upload/v1587995748/WhatsApp_Image_2020-04-27_at_7.18.21_PM.jpg",
+    "name": "Bhupat Prajapati",
+    "address": "Vapi, Gujarat",
+    "contact": "9898631960",
+    "email": "bhupat203@gmail.com",
+    "password": "576c85c584f60555c2a024cbb99dfbbdb5f58c3bdcf28dbc8ea315fd46a388f3",
+    "__v": 0
+}

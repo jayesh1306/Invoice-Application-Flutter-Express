@@ -517,7 +517,7 @@ router.get('/addPayment/:customerId', (req, res, next) => {
 })
 
 router.post('/addPayment/:customerId', (req, res, next) => {
-    console.log(req.body.date)
+    console.log(req.body)
     var payment = new Payment({
         amount: req.body.amount,
         date: new Date(req.body.date),

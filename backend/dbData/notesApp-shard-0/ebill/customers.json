@@ -1,0 +1,233 @@
+[{
+        "_id": {
+            "$oid": "5ece123a1eb7ee0017e2fbc8"
+        },
+        "advance": {
+            "amount": 0,
+            "date": null
+        },
+        "email": "",
+        "invoice": [{
+                "$oid": "5ece134f1eb7ee0017e2fbc9"
+            },
+            {
+                "$oid": "5ece13791eb7ee0017e2fbca"
+            },
+            {
+                "$oid": "5ece14331eb7ee0017e2fbcb"
+            },
+            {
+                "$oid": "5ece2093aa3ec61a66825077"
+            },
+            {
+                "$oid": "5ed0a46f77ae0f0017db7119"
+            },
+            {
+                "$oid": "5f2056f66552a5001740c02a"
+            },
+            {
+                "$oid": "5f2c0bd835c1f70017f2ae81"
+            },
+            {
+                "$oid": "5f7e8c91ed30a8001766df51"
+            },
+            {
+                "$oid": "5fc0910e176a310017ea1f84"
+            },
+            {
+                "$oid": "5fc64314e181a1001739020b"
+            },
+            {
+                "$oid": "5fd9cc556948620017512cc6"
+            },
+            {
+                "$oid": "5fd9cc666948620017512cc7"
+            },
+            {
+                "$oid": "60883bcc763f4200159d0896"
+            },
+            {
+                "$oid": "60883c25763f4200159d0897"
+            },
+            {
+                "$oid": "60883c58763f4200159d0898"
+            },
+            {
+                "$oid": "60883cd45659a70015192c7a"
+            },
+            {
+                "$oid": "60883ecc5659a70015192c7b"
+            },
+            {
+                "$oid": "60883ede5659a70015192c7c"
+            },
+            {
+                "$oid": "60883ef15659a70015192c7d"
+            },
+            {
+                "$oid": "60883efe5659a70015192c7e"
+            },
+            {
+                "$oid": "60883fea5659a70015192c7f"
+            },
+            {
+                "$oid": "60883fff5659a70015192c80"
+            }
+        ],
+        "payments": [{
+                "$oid": "5f38d1f82e6e8c001705137a"
+            },
+            {
+                "$oid": "5fae5ad2abf456001741a009"
+            },
+            {
+                "$oid": "5fd824cadc068600171159d0"
+            },
+            {
+                "$oid": "5fd8251edc068600171159d1"
+            },
+            {
+                "$oid": "5fff0804f625a90015d7b55c"
+            }
+        ],
+        "name": "Shree Sai Construction",
+        "contact": "9978799887",
+        "address": "Vapi",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5edc624d2bab4b00174744b3"
+        },
+        "advance": {
+            "amount": 0,
+            "date": null
+        },
+        "email": "",
+        "invoice": [{
+                "$oid": "5edc63f82bab4b00174744b4"
+            },
+            {
+                "$oid": "5edc64112bab4b00174744b5"
+            },
+            {
+                "$oid": "5edc64302bab4b00174744b6"
+            },
+            {
+                "$oid": "5edc64712bab4b00174744b7"
+            },
+            {
+                "$oid": "5edc648a2bab4b00174744b8"
+            },
+            {
+                "$oid": "5edc64a62bab4b00174744b9"
+            },
+            {
+                "$oid": "5edc64c42bab4b00174744ba"
+            },
+            {
+                "$oid": "5edc64db2bab4b00174744bb"
+            },
+            {
+                "$oid": "5edc64f42bab4b00174744bc"
+            },
+            {
+                "$oid": "5edc65102bab4b00174744bd"
+            },
+            {
+                "$oid": "5edc652a2bab4b00174744be"
+            },
+            {
+                "$oid": "5edc65412bab4b00174744bf"
+            }
+        ],
+        "payments": [{
+            "$oid": "5fead31c110da30015091736"
+        }],
+        "name": "Kisan",
+        "contact": "9824006573",
+        "address": "Vadiyavad",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5efe9751e318bf00170fd720"
+        },
+        "advance": {
+            "amount": 0,
+            "date": null
+        },
+        "email": "",
+        "invoice": [{
+            "$oid": "5efe97d6e318bf00170fd721"
+        }],
+        "payments": [],
+        "name": "Savan bhai",
+        "contact": "8780297994",
+        "address": "Vapi",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60692eeac3c57c00157ae6f2"
+        },
+        "advance": {
+            "amount": 0,
+            "date": null
+        },
+        "email": "",
+        "invoice": [{
+                "$oid": "60692f88c3c57c00157ae6f3"
+            },
+            {
+                "$oid": "60692fa7c3c57c00157ae6f4"
+            },
+            {
+                "$oid": "60692fc5c3c57c00157ae6f5"
+            },
+            {
+                "$oid": "60692fe4c3c57c00157ae6f6"
+            },
+            {
+                "$oid": "60693017c3c57c00157ae6f7"
+            },
+            {
+                "$oid": "60883cb05659a70015192c79"
+            },
+            {
+                "$oid": "60893dea16f5e5001530f7fa"
+            },
+            {
+                "$oid": "60893e8016f5e5001530f7fb"
+            },
+            {
+                "$oid": "6089807cf6ba90001513d04f"
+            },
+            {
+                "$oid": "60898091f6ba90001513d050"
+            },
+            {
+                "$oid": "6089809ef6ba90001513d051"
+            },
+            {
+                "$oid": "608980b4f6ba90001513d052"
+            },
+            {
+                "$oid": "608980c1f6ba90001513d053"
+            },
+            {
+                "$oid": "60898147f6ba90001513d054"
+            },
+            {
+                "$oid": "6089816af6ba90001513d055"
+            }
+        ],
+        "payments": [{
+            "$oid": "609e20ad01b5750015dbe28a"
+        }],
+        "name": "Mayur bhai",
+        "contact": "9924139174",
+        "address": "Ozar",
+        "__v": 0
+    }
+]
