@@ -27,4 +27,3 @@ It will serve at your local ip address on port 3000.
 13. /details/:customerId/payments/delete/:paymentId -  Delete Payment (GET)
 14. /addPayment/:customerId - Add Payment for CustomerId (POST)
 15. /sendSms/:customerId -  Send SMS of Pending Invoice to Customer (GET)
-16. 
