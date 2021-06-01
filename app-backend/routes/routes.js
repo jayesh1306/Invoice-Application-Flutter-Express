@@ -292,7 +292,7 @@ router.get('/details/:customerId/:invoiceId/edit', (req, res, next) => {
 })
 
 router.post('/details/:customerId/:invoiceId/edit', (req, res, next) => {
-    console.log(req.params.customerId, req.params.invoiceId)
+    console.log(req.body)
     var date = new Date(req.body.invoiceDate)
     if (date == 'Invalid Date') {
         date = Date.now()

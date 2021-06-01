@@ -12,6 +12,7 @@
         "connect-flash": "^0.1.1",
         "convert-rupees-into-words": "^1.0.6",
         "cookie-parser": "~1.0.1",
+        "cors": "^2.8.5",
         "debug": "~0.7.4",
         "dotenv": "^8.2.0",
         "ejs": "~0.8.5",

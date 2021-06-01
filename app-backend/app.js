@@ -6,8 +6,10 @@ var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose')
 var dotenv = require('dotenv').config()
+var cors = require('cors');
 const session = require('express-session')
 var expressLayouts = require('express-ejs-layouts')
+
 
 var flash = require('connect-flash')
 var routes = require('./routes/routes')
@@ -21,6 +23,9 @@ app.set('view engine', 'ejs')
 
 // Connect flash
 app.use(flash())
+
+// Cross - Origin Resourse
+app.use(cors())
 
 // Express session
 app.use(
@@ -41,7 +46,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.static(path.join(__dirname, '/')))
 
 // Global variables
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.locals.success_msg = req.flash('success_msg')
     res.locals.error_msg = req.flash('error_msg')
     res.locals.error = req.flash('error')
@@ -55,11 +60,11 @@ app.use('/', authentication);
 mongoose.connect(
     // process.env.MONGODB_PRODUCTION, 
     'mongodb://localhost:27017/testing', {
-        //  'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/ebill?retryWrites=true&w=majority', {
-        // 'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/flutter-testing?retryWrites=true&w=majority', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    },
+    //  'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/ebill?retryWrites=true&w=majority', {
+    // 'mongodb+srv://jayesh:2Ol8BLec9QjxwVCm@notesapp-klr66.mongodb.net/flutter-testing?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+},
     (err, result) => {
         if (err) {
             console.log(err)
@@ -72,6 +77,6 @@ mongoose.connect(
 
 var port = process.env.PORT || 3000
 
-app.listen(port, function() {
+app.listen(port, function () {
     console.log('Express server listening on port ' + port)
 })
