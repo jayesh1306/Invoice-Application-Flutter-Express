@@ -231,6 +231,11 @@ class _PaymentDetailState extends State<PaymentDetail> {
                                             'Amount : ${_paymentModel.payments[index].amount.toString().split('.')[0]}'),
                                         subtitle: Text(
                                             'Mode : ${_paymentModel.payments[index].mode}'),
+                                        isThreeLine: true,
+                                        trailing: Text(
+                                          '${_paymentModel.payments[index].date.split('-')[2]}-${_paymentModel.payments[index].date.split('-')[1]}-${_paymentModel.payments[index].date.split('-')[0]}',
+                                          style: TextStyle(fontSize: 15),
+                                        ),
                                       ),
                                     );
                                   },
